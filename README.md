@@ -25,12 +25,19 @@ Regardless if you can or cannot answer the question, provide a short explanation
 
 The number of optimal clusters is 10. Let me explain how I came to the conclusion.
 
-The dataset V1 and V2 can be seen as a bunch of x and y values, meaning we can plot them on a graph and using "K-means Clustering" the nearest mean can be calculated to create clusters from the given points.
+The dataset V1 and V2 can be seen as a bunch of x and y values, meaning we can plot them on a graph and using "Kmeans Clustering" the nearest mean can be calculated to create clusters from the given points.
 
-**What is "K-means Clustering"?** "K-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster." -Wikipedia
+**What is "Kmeans Clustering"?** "Kmeans clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster." -Wikipedia
 
 I learned more about K-means from the UTD Unsupervised Learning slide found [here](https://personal.utdallas.edu/~nrr150130/cs4375/2019fa/lects/Lecture_12_Clustering.pdf).
 
 So the first step I approached to solve this issue is learn more about the ["Elbow Method"](https://en.wikipedia.org/wiki/Elbow_method_(clustering)). Using the Elbow method, we can produce a graph which looks like an elbow, and it comes handy when we are confused as to how many clusters do we need. What elbow method does is it starts off with making one cluster to the number of clusters in our sample and with the kmeans inertia value we determine what would be the appropriate number of clusters.
 
+The Elbow Graph shows us how the elbow point comes at around **10** and this our optimal number of clusters for the above data which we should choose. If we look at the figure carefully after **10** when we go on increasing the number of cluster there is no big change in the wcss and it remains constant.
+
+![Image of Elbow Graph](elbowMethod.svg)
+
+We will now quickly perform the kmeans clustering with the new number of clusters which is **10** and use different colors to separate the clusters.
+
+![Image of Optimal Cluster Plot](optimalClusterPlot.svg)
 
