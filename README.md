@@ -41,3 +41,18 @@ We will now quickly perform the kmeans clustering with the new number of cluster
 
 ![Image of Optimal Cluster Plot](optimalClusterPlot.svg)
 
+
+<br/>
+
+**P.S.** I did not know how to perform clustering before so I had to teach myself. I have used various sources and guides to get an idea about what I am supposed to do, and what libraries might come in handy. I quickly discovered the kmeans clustering in Python which solved majority of the problem, and I used elbow method to find the optimal number of clusters.
+
+
+## Work Cited
+
+1. https://personal.utdallas.edu/~nrr150130/cs4375/2019fa/lects/Lecture_12_Clustering.pdf
+2. https://en.wikipedia.org/wiki/Elbow_method_(clustering)
+3. https://medium.com/code-to-express/k-means-clustering-for-beginners-using-python-from-scratch-f20e79c8ad00
+
+
+
+
